@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Performers | Velvet Sugar Burlesque</title>
+  <meta name="description" content="Meet the featured performers of Velvet Sugar Burlesque. Explore signature styles, stage personalities, and event-ready entertainment." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #d7bea2;
+      color: #4b3425;
+      font-family: Georgia, serif;
+    }
+
+    .navbar {
+      background: rgba(248, 241, 231, 0.96);
+      border-bottom: 1px solid rgba(75, 52, 37, 0.12);
+    }
+
+    .navbar-brand {
+      color: #5a2a44 !important;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .nav-link {
+      color: #4b3425 !important;
+      font-weight: 600;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      color: #8a3f61 !important;
+    }
+
+    .hero {
+      padding: 100px 20px 70px;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(rgba(75,52,37,0.45), rgba(90,42,68,0.58)),
+        url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 800;
+    }
+
+    .section-pad {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      color: #5a2a44;
+      font-weight: 800;
+      font-size: 2.2rem;
+    }
+
+    .accent-line {
+      width: 70px;
+      height: 4px;
+      background: #c79a5b;
+      border-radius: 999px;
+      margin: 0 auto 1rem;
+    }
+
+    .performer-card {
+      background: #f8f1e7;
+      border: none;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+      height: 100%;
+    }
+
+    .performer-card img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+    }
+
+    .performer-card .card-body {
+      padding: 1.5rem;
+    }
+
+    .performer-name {
+      color: #5a2a44;
+      font-weight: 800;
+      font-size: 1.35rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .performer-tag {
+      color: #8a3f61;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+
+    .bio-section {
+      background: #f3e4d2;
+    }
+
+    .bio-box {
+      background: #f8f1e7;
+      border-radius: 1.2rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      height: 100%;
+    }
+
+    .btn-main {
+      background: #5a2a44;
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 0.75rem 1.35rem;
+      font-weight: 700;
+    }
+
+    .btn-main:hover {
+      background: #8a3f61;
+      color: white;
+    }
+
+    footer {
+      background: #4e392b;
+      color: rgba(255,255,255,0.9);
+      padding: 22px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Velvet Sugar Burlesque</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="updates.html">Updates</a></li>
+          <li class="nav-item"><a class="nav-link active" href="performers.html">Performers</a></li>
+          <li class="nav-item"><a class="nav-link" href="book-us.html">Book Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="press.html">Press</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Featured Performers</h1>
+      <p class="lead mt-3 mb-0 mx-auto" style="max-width: 760px;">
+        Meet a few of the faces behind Velvet Sugar Burlesque. Each performer brings a different rhythm,
+        visual style, and stage personality to the show.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURED GRID -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="accent-line"></div>
+        <h2 class="section-title">Our Spotlight Cast</h2>
+        <p class="mx-auto" style="max-width: 760px;">
+          This page is designed as a polished performer overview, inspired by the archived roster format while using
+          a more modern card layout and simplified cast presentation. :contentReference[oaicite:1]{index=1}
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <div class="card performer-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Performer portrait in glamorous styling">
+            <div class="card-body">
+              <div class="performer-name">Ruby Valentine</div>
+              <div class="performer-tag">Classic Glamour</div>
+              <p>
+                Ruby brings vintage polish, elegant pacing, and a stage presence built around confidence and control.
+                Her acts are ideal for lounge-inspired events and polished themed showcases.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="card performer-card">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=900&q=80" alt="Modern cabaret style performer">
+            <div class="card-body">
+              <div class="performer-name">Lola Mirage</div>
+              <div class="performer-tag">Modern Cabaret</div>
+              <p>
+                Lola leans into bold music, upbeat audience energy, and a flashier visual style.
+                She fits perfectly into nightlife bookings that want a lively, contemporary edge.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="card performer-card">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Theatrical performer portrait">
+            <div class="card-body">
+              <div class="performer-name">Opal LaRue</div>
+              <div class="performer-tag">Theatrical Mood</div>
+              <p>
+                Opal focuses on dramatic visuals, slow-burn storytelling, and layered costume concepts.
+                Her performances are a strong fit for immersive or theme-heavy productions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="card performer-card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Sparkling stage performer portrait">
+            <div class="card-body">
+              <div class="performer-name">Cherry Luxe</div>
+              <div class="performer-tag">Sparkle & Energy</div>
+              <p>
+                Cherry is known for high-energy crowd connection, bright styling, and playful performance timing.
+                She works especially well for celebratory events and pop-forward sets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIOS -->
+  <section class="section-pad bio-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="accent-line"></div>
+        <h2 class="section-title">What Makes the Cast Stand Out</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="bio-box">
+            <h3 class="h5" style="color:#5a2a44;">Different Styles, Better Shows</h3>
+            <p>
+              A strong cast should not feel repetitive. That is why each featured performer is built around a different
+              stage identity, from soft vintage glamour to modern nightlife sparkle.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="bio-box">
+            <h3 class="h5" style="color:#5a2a44;">Flexible for Event Types</h3>
+            <p>
+              Some bookings need a single standout act. Others need multiple performers who can shape the energy of a full show.
+              This roster format makes it easier to match talent to the room.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="bio-box">
+            <h3 class="h5" style="color:#5a2a44;">Built for Private and Public Events</h3>
+            <p>
+              Whether the booking is for a venue, private celebration, themed party, or special showcase, the cast can be arranged
+              to fit the atmosphere and audience size.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad">
+    <div class="container text-center">
+      <div class="accent-line"></div>
+      <h2 class="section-title">Interested in Booking the Cast?</h2>
+      <p class="mx-auto mb-4" style="max-width: 720px;">
+        Reach out with your event details, preferred atmosphere, and venue type. We can help shape a lineup
+        that feels tailored to your show rather than pulled from a generic template.
+      </p>
+      <a href="book-us.html" class="btn btn-main">Go to Book Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      Velvet Sugar Burlesque • Featured performers, themed productions, and event entertainment
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

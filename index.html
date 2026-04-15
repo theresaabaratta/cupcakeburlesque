@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Velvet Sugar Burlesque | Sweet Glamour & Stage Spectacle</title>
+  <meta name="description" content="Velvet Sugar Burlesque offers themed burlesque entertainment for private events, nightlife, theaters, and special occasions." />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --tan: #d7bea2;
+      --tan-light: #eadbc8;
+      --cream: #f8f1e7;
+      --plum: #5a2a44;
+      --rose: #8a3f61;
+      --gold: #c79a5b;
+      --brown: #4b3425;
+      --white: #ffffff;
+    }
+
+    body {
+      background-color: var(--tan);
+      color: var(--brown);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    h1, h2, h3, h4, h5, .navbar-brand {
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    .navbar {
+      background: rgba(248, 241, 231, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(75, 52, 37, 0.12);
+    }
+
+    .navbar-brand {
+      color: var(--plum) !important;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .nav-link {
+      color: var(--brown) !important;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      color: var(--rose) !important;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(75, 52, 37, 0.45), rgba(90, 42, 68, 0.55)),
+        url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+      color: var(--white);
+      position: relative;
+    }
+
+    .hero-card {
+      background: rgba(248, 241, 231, 0.14);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+      backdrop-filter: blur(6px);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      font-weight: 800;
+      line-height: 1.05;
+    }
+
+    .hero .lead {
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    .btn-main {
+      background: var(--plum);
+      border: none;
+      color: #fff;
+      padding: 0.85rem 1.4rem;
+      font-weight: 700;
+      border-radius: 999px;
+    }
+
+    .btn-main:hover {
+      background: var(--rose);
+      color: #fff;
+    }
+
+    .btn-outline-light.rounded-pill:hover {
+      color: var(--plum);
+    }
+
+    .section-pad {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 2.1rem;
+      color: var(--plum);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .soft-card {
+      background: var(--cream);
+      border: none;
+      border-radius: 1.25rem;
+      box-shadow: 0 12px 30px rgba(75, 52, 37, 0.08);
+      height: 100%;
+    }
+
+    .soft-card .card-body {
+      padding: 1.5rem;
+    }
+
+    .accent-line {
+      width: 72px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .feature-pill {
+      display: inline-block;
+      padding: 0.55rem 1rem;
+      background: rgba(90, 42, 68, 0.08);
+      color: var(--plum);
+      border-radius: 999px;
+      margin: 0.35rem 0.35rem 0 0;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .performer-img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-top-left-radius: 1.25rem;
+      border-top-right-radius: 1.25rem;
+    }
+
+    .split-section {
+      background: linear-gradient(180deg, var(--cream), #f2e4d3);
+    }
+
+    .booking-box {
+      background: var(--plum);
+      color: #fff;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 18px 36px rgba(90, 42, 68, 0.2);
+    }
+
+    .booking-box .form-control,
+    .booking-box .form-select {
+      border-radius: 0.85rem;
+      padding: 0.9rem 1rem;
+      border: none;
+    }
+
+    .news-card {
+      border-left: 5px solid var(--gold);
+    }
+
+      .navbar-brand:hover {
+    color: #8a3f61 !important;
+  }
+
+  .nav-link {
+    color: #4b3425 !important;
+    margin-left: 0.35rem;
+    margin-right: 0.35rem;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #8a3f61 !important;
+  }
+
+    footer {
+      background: #4e392b;
+      color: rgba(255,255,255,0.85);
+      padding: 24px 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top" style="background: rgba(248, 241, 231, 0.96); border-bottom: 1px solid rgba(75, 52, 37, 0.12);">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-uppercase" href="index.html" style="letter-spacing: 1.5px; color: #5a2a44;">
+      Velvet Sugar Burlesque
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link active fw-semibold" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="updates.html">Updates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="performers.html">Performers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="book-us.html">Book Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="press.html">Press</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-lg-8">
+          <div class="hero-card">
+            <p class="text-uppercase fw-bold mb-2">Live Entertainment • Private Events • Themed Productions</p>
+            <h1>Sweet glamour. Bold stage energy. A show with real personality.</h1>
+            <p class="lead mt-3 mb-4">
+              Velvet Sugar Burlesque creates playful, polished entertainment for nightlife, private parties,
+              theaters, creative events, and specialty bookings. From intimate feature acts to a full cast production,
+              each show is built to fit the room, the mood, and the audience.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#book" class="btn btn-main">Request Booking</a>
+              <a href="#about" class="btn btn-outline-light rounded-pill px-4">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="accent-line"></div>
+          <h2 class="section-title">About the Company</h2>
+          <p class="fs-5">
+            Velvet Sugar Burlesque is a performance collective built around variety, visual flair, and crowd-friendly showmanship.
+            We design themed entertainment for venues and private clients who want a memorable experience with style.
+          </p>
+          <p>
+            Our productions can be adjusted for different audiences, event sizes, and atmospheres. Some bookings call for a single
+            featured performer who changes the energy of the room in an instant. Others need a larger cast with emceeing, pacing,
+            layered costumes, and a more theatrical reveal.
+          </p>
+          <p>
+            We focus on polished presentation, strong music choices, and performers who each bring a distinct identity to the stage.
+            The result is an event that feels custom instead of generic.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="soft-card card">
+            <div class="card-body p-4 p-lg-5">
+              <h3 class="h4 mb-3" style="color: var(--plum);">Best for events like:</h3>
+              <span class="feature-pill">Nightclubs</span>
+              <span class="feature-pill">Lounges</span>
+              <span class="feature-pill">Theaters</span>
+              <span class="feature-pill">Restaurants</span>
+              <span class="feature-pill">Art Shows</span>
+              <span class="feature-pill">Corporate Parties</span>
+              <span class="feature-pill">Private Celebrations</span>
+              <span class="feature-pill">Weddings</span>
+              <span class="feature-pill">Bachelor/ette Events</span>
+              <span class="feature-pill">Festivals</span>
+              <span class="feature-pill">Fundraisers</span>
+              <span class="feature-pill">Creative Launches</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-pad split-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="accent-line mx-auto"></div>
+        <h2 class="section-title">What We Offer</h2>
+        <p class="mx-auto" style="max-width: 760px;">
+          Inspired by old-school glamour but flexible enough for modern events, our menu of entertainment options
+          lets clients build a show that fits their crowd and venue.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card">
+            <div class="card-body">
+              <h3 class="h5">Burlesque Features</h3>
+              <p>Solo or ensemble routines with costume changes, theatrical staging, and a playful classic-meets-modern feel.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card">
+            <div class="card-body">
+              <h3 class="h5">Fire & Specialty Acts</h3>
+              <p>Add visual drama with carefully planned variety performances for larger events and immersive productions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card">
+            <div class="card-body">
+              <h3 class="h5">Hosts & Emcees</h3>
+              <p>Keep the room flowing with a charismatic host who can introduce acts, engage the crowd, and shape the evening.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card">
+            <div class="card-body">
+              <h3 class="h5">Ambient Performers</h3>
+              <p>Stylized greeters, roaming entertainment, and visual atmosphere for cocktail hours, galleries, and themed parties.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card">
+            <div class="card-body">
+              <h3 class="h5">Theme-Based Productions</h3>
+              <p>Vintage cabaret, glitter glam, moody lounge, festival sparkle, or custom concepts created around your event.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card">
+            <div class="card-body">
+              <h3 class="h5">Private Event Packages</h3>
+              <p>From one featured act to a bigger staged showcase, packages can scale to suit your space and audience size.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFORMERS -->
+  <section id="performers" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="accent-line mx-auto"></div>
+        <h2 class="section-title">Featured Performers</h2>
+        <p class="mx-auto" style="max-width: 740px;">
+          Each performer brings a different mood, signature look, and stage presence, making the cast feel layered rather than repetitive.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card overflow-hidden">
+            <img class="performer-img" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Featured burlesque performer in glamorous styling">
+            <div class="card-body">
+              <h3 class="h5 mb-1">Ruby Valentine</h3>
+              <p class="text-muted mb-2">Classic glamour • feather fan features • velvet lounge mood</p>
+              <p class="mb-0">Known for elegant pacing, dramatic reveals, and a polished old-Hollywood presence.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card overflow-hidden">
+            <img class="performer-img" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="Modern cabaret performer portrait">
+            <div class="card-body">
+              <h3 class="h5 mb-1">Lola Mirage</h3>
+              <p class="text-muted mb-2">Modern cabaret • glitter styling • high-energy audience appeal</p>
+              <p class="mb-0">Brings a contemporary edge with bold music choices and confident, crowd-focused performance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card soft-card overflow-hidden">
+            <img class="performer-img" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Theatrical performer in dramatic fashion look">
+            <div class="card-body">
+              <h3 class="h5 mb-1">Opal LaRue</h3>
+              <p class="text-muted mb-2">Theatrical stagecraft • moody styling • specialty concepts</p>
+              <p class="mb-0">Ideal for clients who want visual storytelling, dramatic themes, and a more immersive feel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER / STORY -->
+  <section class="section-pad split-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=80"
+            alt="Lead producer or founder portrait"
+            class="img-fluid rounded-4 shadow"
+          />
+        </div>
+        <div class="col-lg-7">
+          <div class="accent-line"></div>
+          <h2 class="section-title">A Brand Built for Stylish Variety Entertainment</h2>
+          <p class="fs-5">
+            The company began with a simple idea: create a performance brand that could feel glamorous, flexible, and event-ready at the same time.
+          </p>
+          <p>
+            Instead of offering one fixed format, Velvet Sugar Burlesque was shaped to support different scales of production.
+            That approach allows clients to bring in a single standout act for a curated evening or build a larger stage experience
+            with multiple performers and a clear show flow.
+          </p>
+          <p>
+            The focus remains the same across every booking: strong visual presentation, memorable performers, and a show that feels
+            tailored to the room instead of copied from a template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPDATES -->
+  <section id="updates" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="accent-line mx-auto"></div>
+        <h2 class="section-title">Latest Updates</h2>
+        <p>Use this area to feature upcoming shows, venue announcements, or special themed nights.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card soft-card news-card">
+            <div class="card-body">
+              <p class="text-muted small mb-2">Featured News</p>
+              <h3 class="h4">Velvet Midnight Revue Coming Soon</h3>
+              <p class="mb-3">
+                A moody late-night production with lush costuming, theatrical emceeing, and a cast designed for an immersive club atmosphere.
+              </p>
+              <a href="#" class="btn btn-sm btn-main">Read Update</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card soft-card news-card">
+            <div class="card-body">
+              <p class="text-muted small mb-2">Upcoming Spotlight</p>
+              <h3 class="h4">New Theme Package for Private Events</h3>
+              <p class="mb-3">
+                A flexible format for hosts who want a polished show element added to birthdays, creative parties, and special occasion bookings.
+              </p>
+              <a href="#" class="btn btn-sm btn-main">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="book" class="section-pad">
+    <div class="container">
+      <div class="booking-box">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <h2 class="fw-bold mb-3">Book Velvet Sugar Burlesque</h2>
+            <p class="mb-3">
+              Tell us about your event, audience size, venue type, and preferred atmosphere. We can tailor a solo feature,
+              multi-performer set, or larger themed show around your needs.
+            </p>
+            <p class="mb-0">
+              Perfect for venues, nightlife concepts, private celebrations, launch parties, art events, and more.
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Event Date">
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select">
+                    <option selected>Type of Event</option>
+                    <option>Private Party</option>
+                    <option>Nightclub / Lounge</option>
+                    <option>Theater Booking</option>
+                    <option>Corporate Event</option>
+                    <option>Festival / Public Show</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="5" placeholder="Tell us about the show you want..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-light rounded-pill px-4 fw-bold">
+                    Send Booking Request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-6">
+          <strong>Velvet Sugar Burlesque</strong><br>
+          Sweet style, theatrical sparkle, and customizable live entertainment.
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#about">About</a> •
+          <a href="#performers">Performers</a> •
+          <a href="#services">Services</a> •
+          <a href="#book">Book</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
